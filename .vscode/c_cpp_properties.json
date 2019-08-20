@@ -1,0 +1,51 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "defines": [
+                "__CC_ARM",
+                "USE_STDPERIPH_DRIVER",
+                " STM32F40_41xxx"
+            ],
+            "compilerPath": "D:\\sowfware\\wingw\\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\\mingw64\\bin\\gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "includePath": [
+                "${workspaceRoot}",
+                "${workspaceRoot}/office_inc/STM32_StdPeriph_Driver",
+                "${workspaceRoot}/user_inc",
+                "${workspaceRoot}/office_inc/CMSIS",
+                "${workspaceRoot}/office_inc/Utilities",
+                "${workspaceRoot}/office_src/MDK-ARM"
+            ],
+            "browse": {
+                "path": [
+                    "${workspaceRoot}",
+                    "D:/1.stm32_code/stm32_f407/iotext/office_inc/STM32_StdPeriph_Driver",
+                    "D:/1.stm32_code/stm32_f407/iotext/user_inc",
+                    "D:/1.stm32_code/stm32_f407/iotext/office_inc/CMSIS",
+                    "D:/1.stm32_code/stm32_f407/iotext/office_inc/Utilities",
+                    "D:/1.stm32_code/stm32_f407/iotext/office_src/MDK-ARM"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        },
+        {
+            "name": "includePath",
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "__CC_ARM",
+                "USE_STDPERIPH_DRIVER",
+                " STM32F40_41xxx"
+            ],
+            "compilerPath": "D:\\sowfware\\wingw\\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\\mingw64\\bin\\gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"main.h": "c",
+			"stm32f4xx.h": "c",
+			"core_cm4.h": "c",
+			"stm32f4xx_usart.h": "c",
+			"driver_init.h": "c",
+			"bitband.h": "c",
+			"stm32f4xx_tim.h": "c",
+			"stdio.h": "c",
+			"os_kernel.h": "c",
+			"remyos.h": "c"
+		}
+	}
+}
