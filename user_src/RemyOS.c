@@ -32,8 +32,8 @@ struct __RemyOS_struct
 */
 void SVC_Handler_Cpp(uint32_t * svc_array)
 {
-	uint32_t svc_stack_r[4];
-    uint16_t svc_id;
+//	uint32_t svc_stack_r[4];
+  uint16_t svc_id;
     /*
         cortex interrupt push stack structure
         cortex 中断压栈结构
@@ -52,10 +52,10 @@ void SVC_Handler_Cpp(uint32_t * svc_array)
         return_pc + 0    svc function entry address
     
     */
-	svc_stack_r[0] = svc_array[0];
-    svc_stack_r[1] = svc_array[1];
-    svc_stack_r[2] = svc_array[2];
-    svc_stack_r[3] = svc_array[3];
+//	svc_stack_r[0] = svc_array[0];
+//	svc_stack_r[1] = svc_array[1];
+//	svc_stack_r[2] = svc_array[2];
+//	svc_stack_r[3] = svc_array[3];
 	svc_id = ((char *)svc_array[6])[-2];
     switch (svc_id)
     {
@@ -78,7 +78,7 @@ void os_null_task(void)
 }
 /*
     \brief :  OS delay is a behavior that abandon now cpu control until delay done
-                    系统延迟是一个直接在延迟完成前一直放弃CPU控制权的行为
+                    系统延迟是一个直接在系统延迟完成前一直放弃CPU控制权的行为
     \param  : timedelay the number of time slices to delay
                     要延迟的时间片个数
 */
@@ -86,7 +86,7 @@ void RemyOS_delay(uint32_t timedelay)
 {
     _RemyOS.os_status[curr_task] = OS_ENABLE;
     _RemyOS.os_task_delay[curr_task] = timedelay;
-	delay_falg = 1;
+		delay_falg = 1;
     OS_Delay();
     while(delay_falg == 1);
     //task_despatch_time();

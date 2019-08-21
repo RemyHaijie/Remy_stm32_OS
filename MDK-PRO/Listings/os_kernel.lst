@@ -126,16 +126,16 @@ ARM Macro Assembler    Page 2
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
 erwork --depend=..\mdk_output\os_kernel.d -o..\mdk_output\os_kernel.o -ID:\1.st
-m32_code\stm32_f407\BOOK\MDK-PRO\RTE -IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\1
-.0.8\Device\Include -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__UVISION_VERSI
+m32_code\stm32_f407\RemyOS_github\MDK-PRO\RTE -IC:\Keil_v5\ARM\PACK\Keil\STM32F
+4xx_DFP\1.0.8\Device\Include -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__UVIS
 
 
 
 ARM Macro Assembler    Page 3 
 
 
-ON SETA 520" --predefine="STM32F40_41xxx SETA 1" --list=.\listings\os_kernel.ls
-t ..\user_src\os_kernel.asm
+ION_VERSION SETA 520" --predefine="STM32F40_41xxx SETA 1" --list=.\listings\os_
+kernel.lst ..\user_src\os_kernel.asm
 
 
 
